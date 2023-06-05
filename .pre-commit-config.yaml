@@ -53,7 +53,7 @@ repos:
     args:
       - --strict
       - --ignore-missing-imports
-      - --allow-untyped-decorators
+      - --allow-untyped-decorators # colocar quando escrever tests
 
 - repo: https://github.com/pycqa/pylint
   rev: v2.17.4
