@@ -41,17 +41,18 @@ repos:
   hooks:
     - id: flake8
 
+- repo: https://github.com/econchick/interrogate
+  rev: 1.5.0
+  hooks:
+    - id: interrogate
+
+# list of repos not fully supported with pre-commit
 - repo: https://github.com/pre-commit/mirrors-mypy
   rev: v1.3.0
   hooks:
   - id: mypy
     additional_dependencies: [numpy==1.24.3]
     args: [--strict, --ignore-missing-imports]
-
-- repo: https://github.com/econchick/interrogate
-  rev: 1.5.0
-  hooks:
-    - id: interrogate
 
 - repo: https://github.com/pycqa/pylint
   rev: v2.17.4
