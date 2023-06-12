@@ -45,15 +45,22 @@ repos:
     - id: interrogate
 
 # list of repos not fully supported with pre-commit
-- repo: https://github.com/pre-commit/mirrors-mypy
-  rev: v1.3.0
+- repo: local
   hooks:
   - id: mypy
-    additional_dependencies: [numpy==1.24.3]
-    args:
-      - --strict
-      - --ignore-missing-imports
-      - --allow-untyped-decorators # colocar quando escrever tests
+    name: mypy
+    language: system
+    entry: make mypy
+
+# - repo: https://github.com/pre-commit/mirrors-mypy
+#   rev: v1.3.0
+#   hooks:
+#   - id: mypy
+#     additional_dependencies: [numpy==1.24.3]
+#     args:
+#       - --strict
+#       - --ignore-missing-imports
+#       - --allow-untyped-decorators # colocar quando escrever tests
 
 - repo: local
   hooks:
