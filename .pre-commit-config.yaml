@@ -58,7 +58,7 @@ repos:
 - repo: local
   hooks:
   - id: pylint
-    name: pylint custom
+    name: pylint
     language: system
     entry: make pylint
 
