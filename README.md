@@ -9,6 +9,6 @@ a python library example with well-know tools and best practices of software eng
 ```sh
 $ poetry new my-library
 $ poetry add numpy
-$ poetry add --group dev black isort pytest pylint flake8 mypy interrogate pre-commit
+$ poetry add --group dev black isort pytest pylint flake8 mypy interrogate pre-commit "bandit[toml]"
 $ pre-commmit install --install-hooks
 ```
