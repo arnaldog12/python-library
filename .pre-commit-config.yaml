@@ -43,7 +43,8 @@ repos:
   rev: 1.7.5
   hooks:
   - id: bandit
-    args: ["-r", "my_library"]
+    args: ["-c", "pyproject.toml", "-r", "my_library/"]
+    additional_dependencies: [ "bandit[toml]" ]
 
 - repo: https://github.com/econchick/interrogate
   rev: 1.5.0
