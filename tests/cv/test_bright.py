@@ -1,4 +1,4 @@
-"""Test Operations."""
+"""Test Bright."""
 
 import numpy as np
 import pytest
@@ -28,5 +28,6 @@ def test_bright_with_fake_image(fake_image: NDArray[np.uint8]) -> None:
     """Test bright with fake image."""
     res = bright(fake_image, 250)
 
+    assert res.dtype == np.uint8
     assert np.min(res) == 251
     assert np.max(res) == 255
