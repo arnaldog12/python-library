@@ -9,7 +9,7 @@ a python library example with well-know tools and best practices of software eng
 ```sh
 $ poetry new my-library
 $ poetry add numpy Pillow "typer[all]"
-$ poetry add --group dev black isort pytest pylint flake8 mypy interrogate pre-commit "bandit[toml]" types-Pillow
+$ poetry add --group dev black isort pytest pylint flake8 ruff mypy interrogate pre-commit "bandit[toml]" types-Pillow
 $ pre-commmit install --install-hooks
 ```
 
