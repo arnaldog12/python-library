@@ -27,6 +27,7 @@ pre-commit = "^3.3.1"
 autoflake8 = "^0.4.0"
 bandit = {extras = ["toml"], version = "^1.7.5"}
 types-pillow = "^9.5.0.4"
+ruff = "^0.0.275"
 
 [tool.black]
 line-length = 120
@@ -49,6 +50,11 @@ max-line-length = 120
 
 [tool.pylint.MASTER]
 fail-under = 10
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+fix = true
 
 [tool.bandit]
 exclude_dirs = ["tests"]
