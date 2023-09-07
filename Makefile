@@ -8,3 +8,6 @@ pylint:
 mypy:
 	@mypy my_library
 	@mypy tests
+
+test:
+	@pytest --cov=my_library --cov-report=term-missing tests
